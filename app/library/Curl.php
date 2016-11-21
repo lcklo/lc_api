@@ -30,7 +30,7 @@ class Curl {
     /**
      * 获取返回的状态文本信息
      */
-    public static function getMsg() {
+    public static function getErrorMsg() {
         return self::$status_msg;
     }
 }

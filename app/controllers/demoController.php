@@ -42,7 +42,7 @@ class demoController extends Controller {
         $data = Curl::get('http://php.php/ceshi.php');
 //        $data = Curl::get('http://www.php.123');
         if ($data === false) {
-            return Curl::getMsg();
+            return Curl::getErrorMsg();
         }
         return $data;
 //        return Curl::get('http://php.php/ceshi.php');

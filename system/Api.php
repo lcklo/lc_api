@@ -41,7 +41,7 @@ class Api {
      * 返回API格式化消息
      */
     public static function outApi() {
-        Header::show(self::$code);
+//        Header::show(self::$code);
         echo Json::encode(array(
             'code' => self::$code,
             'data' => self::$data,
